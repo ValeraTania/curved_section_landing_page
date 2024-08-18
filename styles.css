@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap');
+
+:root{
+    --headingTypo: "Poppins", sans-serif;
+    --bodyTypo: "Open Sans", sans-serif;
+    --pink: hsl(322, 100%, 66%);
+    --lightPink: hsl(321, 100%, 78%);
+    --lightRed: hsl(0, 100%, 63%);
+    --veryDarkCyan: hsl(192, 100%, 9%);
+    --veryPaleBlue: hsl(207, 100%, 98%);
+}
+
+body{
+    font-family: var(--bodyTypo);
+    font-size: 18px;
+}
+
+/*---Navigation---*/
+
+nav button{
+    border: .15em solid var(--lightPink);
+    color: var(--lightPink);
+    background-color: unset;
+    font-weight: 600;
+}
+
+nav button:hover{
+    opacity: 70%;
+}
+
+/*---Headers---*/
+
+h1,h2,h3{
+    font-family: var(--headingTypo);
+}
+
+/*---1st section---*/
+
+.first_section{
+    color: var(--veryDarkCyan);
+}
+
+/*----Buttons-----*/
+button:not(nav button){
+    background-color: var(--pink);
+    color: var(--veryPaleBlue);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+button:not(nav button):hover{
+    background-color: var(--lightPink);
+}
+
+span{
+    color: var(--veryDarkCyan);
+    font-weight: 600;
+    font-family: var(--headingTypo);
+    font-size: 4em;
+}
+
+/*---1st section---*/
+
+.second_section__grow_together,.second_section__users{
+    background-color: var(--veryPaleBlue);
+  
+}
+
+/*----Footer-----*/
+
+footer{
+    background-color: var(--veryDarkCyan);
+    font-family: var(--bodyTypo);
+}
+
+.footer__contact img{
+    width: 1.2em;
+    height: 1.2em;
+}
+
+i:hover{
+    color: rgb(104, 209, 235);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+
+/*----Validation------*/
+
+  form:has(input:invalid):after{
+    color: rgb(245, 85, 85);
+    font-family: var(--bodyTypo);
+    content: "Check your email please";
+    cursor: pointer;
+
+  }
+
+
+   form input:invalid {
+    border: 1px solid rgb(245, 85, 85); 
+
+}
